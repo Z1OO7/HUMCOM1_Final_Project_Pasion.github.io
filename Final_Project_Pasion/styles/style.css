@@ -38,14 +38,11 @@ footer{
 	padding-right: 20%;
 	box-sizing: border-box;
 }
-.container-registration{
+.container{
 	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../src/motiv.jpg);
-	background-position: center;
-	background-size: cover;
-	padding-left: 14%;
-	padding-right: 14%;
+	height: 1vh;
+	padding-right: 8%;
+	padding-left: 8%;
 	box-sizing: border-box;
 }
 .nav-bar{
@@ -212,16 +209,28 @@ footer{
 	padding-bottom: 20px;
 }
 /*SERVICE SECTION */
-.container-service{
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../src/motiv.jpg);
-	background-position: center;
-	background-size: cover;
 
-	padding-left: 17%;
-	box-sizing: border-box;
+.S-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../src/motiv.jpg);
+  padding: 13% 17%;
 }
+
+.S-title {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.serv-type {
+  font-family: fantasy;
+  font-size: 4vw;
+  color: red;
+  margin-bottom: 30px;
+}
+
 .serv{
 	justify-content: space-between;
 	box-sizing: border-box;
@@ -232,20 +241,21 @@ footer{
 	height: 180px;
 	display: inline-block;
 	border-radius: 100px;
-	padding: 0px 15px;
+	padding: 0px 10px;
 	box-shadow: border-box;
 	cursor: pointer;
-	margin: 15px;
-	background-image: ;
+	margin: 10px;
 	background-position: center;
 	background-size: cover;
 }
-.serv-type{
-	text-align: center;
-	padding-right: 18%;
-	font-family: fantasy;
-	font-size: 50px;
-	color: red;
+@media screen and (max-width: 600px) {
+  .serv-type {
+    font-size: 30px;
+  }
+  .S-section {
+    flex-direction: column;
+    padding: 25% 5%;
+  }
 }
 .serv h5{
 	margin: 125% 0%;
@@ -439,6 +449,21 @@ footer{
 	text-indent: 2em;
 }
 /*REGISTRATION SECTION*/
+
+.R-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../src/motiv.jpg);
+  padding: 17% 17%;
+}
+@media only screen and (max-width: 600px) {
+  .R-section {
+    padding: 25% 5%;
+  }
+}
+
 .form {
 	border-radius: 10px;
 	align-items: left;
@@ -518,3 +543,4 @@ td {
 	max-width: 100%;
 	overflow-wrap: break-word;
 }
+
